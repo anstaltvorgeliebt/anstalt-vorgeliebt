@@ -98,23 +98,3 @@ a{color:inherit}
   .hero .bg .bg1,.hero .bg .bg2,.hero .hero-logo{animation:none}
   .hero .bg .bg2{opacity:1}
 }
-
-/* Hero logo fade-in after background transition */
-.hero-logo-fade{
-  position:absolute;
-  left:32px;
-  bottom:28px;
-  width:180px;
-  height:auto;
-  opacity:0;
-  z-index:2;
-  filter: drop-shadow(0 10px 24px rgba(0,0,0,.35));
-  animation: logoFadeIn 2.2s ease forwards;
-  animation-delay: 10s;
-}
-@keyframes logoFadeIn{from{opacity:0; transform:translateY(10px) scale(.98);}to{opacity:1; transform:translateY(0) scale(1);}}
-
-@media (prefers-reduced-motion: reduce){
-  .hero-bg2{animation:none; opacity:1;}
-  .hero-logo-fade{animation:none; opacity:1;}
-}
