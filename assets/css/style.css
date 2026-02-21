@@ -34,17 +34,14 @@ a{color:inherit}
 .hero .bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:opacity,transform}
 .hero .bg .bg1{opacity:1;z-index:1;animation:zoomSlow 12s ease-in-out infinite alternate}
 .hero .bg .bg2{opacity:0;z-index:2;animation:fadeRoom 12s ease-in-out infinite}
-@keyframes fadeRoom{0%{opacity:0}40%{opacity:0}70%{opacity:1}100%{opacity:1}}
+@keyframes fadeRoom{0%{opacity:0}35%{opacity:0}55%{opacity:1}100%{opacity:1}}40%{opacity:0}70%{opacity:1}100%{opacity:1}}
 @keyframes zoomSlow{0%{transform:scale(1)}100%{transform:scale(1.03)}}
 .hero .content{position:relative;z-index:3;width:100%}
-.hero .panel{max-width:640px;margin-left:auto;color:#f3f4f6;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.14);padding:34px;border-radius:22px;backdrop-filter: blur(6px)}
+.hero .panel{max-width:640px;margin-left:auto;color:#f3f4f6;background:rgba(0,0,0,.38);border:1px solid rgba(255,255,255,.14);padding:34px;border-radius:22px;backdrop-filter: blur(6px)}
 .hero h1{margin:0;font-weight:400;line-height:1.55;font-size:32px}
 .hero h1 strong{font-weight:650}
 .hero .sub{margin-top:14px;color:rgba(243,244,246,.86);font-size:14px;line-height:1.6}
 .hero .cta{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
-.hero .hero-logo{margin-top:18px;opacity:0;animation:logoFade 12s ease-in-out infinite}
-.hero .hero-logo img{height:46px;width:auto}
-@keyframes logoFade{0%{opacity:0}30%{opacity:0}45%{opacity:1}100%{opacity:1}}
 .section{padding:64px 0}
 .section.alt{background:var(--soft)}
 .h2{font-size:26px;margin:0 0 10px}
@@ -98,3 +95,13 @@ a{color:inherit}
   .hero .bg .bg1,.hero .bg .bg2,.hero .hero-logo{animation:none}
   .hero .bg .bg2{opacity:1}
 }
+
+/* Hero secondary buttons (sichtbar auf hellem Hintergrund) */
+.hero .btn.secondary{background:rgba(255,255,255,.88);color:#111827;border:1px solid rgba(255,255,255,.55);box-shadow:0 10px 26px rgba(0,0,0,.22)}
+.hero .btn.secondary:hover{background:#fff}
+
+
+/* Logo Reveal (Slide 3) */
+.hero .hero-logo-reveal{position:absolute;left:6%;bottom:8%;z-index:2;opacity:0;animation:logoReveal 12s ease-in-out infinite;pointer-events:none}
+.hero .hero-logo-reveal img{width:min(280px,42vw);height:auto;filter:drop-shadow(0 18px 35px rgba(0,0,0,.45))}
+@keyframes logoReveal{0%{opacity:0;transform:translateY(8px) scale(.98)}55%{opacity:0;transform:translateY(8px) scale(.98)}72%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:1;transform:translateY(0) scale(1)}}
