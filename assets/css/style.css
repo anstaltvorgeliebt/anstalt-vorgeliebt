@@ -105,3 +105,24 @@ a{color:inherit}
 .hero .hero-logo-reveal{position:absolute;left:6%;bottom:8%;z-index:2;opacity:0;animation:logoReveal 12s ease-in-out infinite;pointer-events:none}
 .hero .hero-logo-reveal img{width:clamp(800px,85vw,1800px);height:auto;filter:drop-shadow(0 22px 55px rgba(0,0,0,.5));}
 @keyframes logoReveal{0%{opacity:0;transform:translateY(8px) scale(.98)}55%{opacity:0;transform:translateY(8px) scale(.98)}72%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:1;transform:translateY(0) scale(1)}}
+
+
+
+
+/* FORCE HERO LOGO SIZE (SLIDE 3) — SCALE BY VIEWPORT HEIGHT */
+.hero .hero-logo-reveal img{
+  height: 70vh !important;
+  max-height: 820px !important;
+  min-height: 420px !important;
+  width: auto !important;
+  max-width: none !important;
+  filter: drop-shadow(0 22px 55px rgba(0,0,0,.5));
+}
+
+/* Keep it sensible on very small screens */
+@media (max-width: 520px){
+  .hero .hero-logo-reveal img{
+    height: 52vh !important;
+    min-height: 260px !important;
+  }
+}
