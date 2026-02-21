@@ -103,5 +103,5 @@ a{color:inherit}
 
 /* Logo Reveal (Slide 3) */
 .hero .hero-logo-reveal{position:absolute;left:6%;bottom:8%;z-index:2;opacity:0;animation:logoReveal 12s ease-in-out infinite;pointer-events:none}
-.hero .hero-logo-reveal img{width:clamp(220px,28vw,520px);height:auto;filter:drop-shadow(0 18px 35px rgba(0,0,0,.45))}
-@keyframes logoReveal{0%{opacity:0;transform:translateY(8px) scale(.98)}55%{opacity:0;transform:translateY(8px) scale(.98)}72%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:1;transform:translateY(0) scale(1)}}
+.hero .hero-logo-reveal img{width:clamp(480px,65vw,1200px);height:auto;filter:drop-shadow(0 18px 40px rgba(0,0,0,.45))}
+@keyframes logoReveal{0%{opacity:0;transform:translateY(8px0) scale(.98)}55%{opacity:0;transform:translateY(8px) scale(.98)}72%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:1;transform:translateY(0) scale(1)}}
