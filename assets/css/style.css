@@ -126,3 +126,30 @@ a{color:inherit}
     min-height: 260px !important;
   }
 }
+
+
+/* Service pages hero header (uses service tile images) */
+.service-hero{
+  position: relative;
+  min-height: 42vh;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items:flex-end;
+}
+.service-hero__overlay{
+  width:100%;
+  padding: 56px 20px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.70) 100%);
+}
+.service-hero__overlay h1{
+  margin:0;
+  font-size: clamp(28px, 4vw, 46px);
+  color:#fff;
+  text-shadow: 0 10px 30px rgba(0,0,0,.45);
+}
+@media (max-width: 720px){
+  .service-hero{min-height: 34vh;}
+  .service-hero__overlay{padding: 40px 16px;}
+}
