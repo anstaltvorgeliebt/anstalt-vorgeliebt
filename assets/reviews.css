@@ -1,0 +1,9 @@
+.av-reviews { padding: 48px 0; }
+.av-reviews-head { margin-bottom: 18px; }
+.av-reviews-title { margin: 0 0 6px 0; font-size: 1.6rem; line-height: 1.2; }
+.av-reviews-subtitle { margin: 0; opacity: .85; }
+.av-reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.av-review-card { background: rgba(255,255,255,.92); border: 1px solid rgba(0,0,0,.08); border-radius: 14px; padding: 18px; box-shadow: 0 8px 22px rgba(0,0,0,.06); }
+.av-review-stars { letter-spacing: 1px; font-size: 1rem; margin-bottom: 10px; }
+.av-review-text { line-height: 1.55; }
+.av-review-author { margin-top: 12px; font-weight: 700; }
